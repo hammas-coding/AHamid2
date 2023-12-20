@@ -6,6 +6,12 @@
   font-family: "Roboto Serif", Sans-serif;
 }
 /* navbar  */
+.navbar {
+  background-color: #fff !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 99;
+}
 .nav-main {
   background-color: #fff !important;
 }
@@ -222,7 +228,7 @@ nav ul li a {
 }
 .stick-left {
   position: sticky;
-  top: 0;
+  top: 100px;
 }
 .form-list-heading {
   font-size: 1.75rem;
@@ -585,6 +591,14 @@ nav ul li a {
   }
   .drop-left {
     border-right: none;
+  }
+  .tes-card-inner p {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+  .fa-star {
+    color: #f6bb06;
+    font-size: 0.5rem;
   }
 }
 
