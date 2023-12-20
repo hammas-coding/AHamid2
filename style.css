@@ -393,6 +393,11 @@ nav ul li a {
   width: calc(33.333% - 20px);
   margin: 10px;
   box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.tes-card:hover {
+  transform: translateY(-5%);
 }
 .tes-card-inner {
   background-color: #fff;
@@ -425,9 +430,11 @@ nav ul li a {
 } */
 .tes-card-inner p {
   margin-top: 0.25rem;
+  font-size: 1rem;
 }
 .fa-star {
   color: #f6bb06;
+  font-size: 1rem;
 }
 .tes-card-bottom img {
   width: 30px;
@@ -453,7 +460,7 @@ nav ul li a {
 }
 .next-prev-main {
   cursor: pointer;
-  background-color: #6ec1e4;
+  background-color: #00384d;
   padding: 0.5rem 0.75rem;
   border-radius: 50%;
 }
