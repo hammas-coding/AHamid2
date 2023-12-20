@@ -452,6 +452,7 @@ nav ul li a {
   color: #fff;
 }
 .next-prev-main {
+  cursor: pointer;
   background-color: #6ec1e4;
   padding: 0.5rem 0.75rem;
   border-radius: 50%;
