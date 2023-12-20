@@ -205,6 +205,16 @@ nav ul li a {
   text-decoration: none;
   color: #14798b;
 }
+.list-number {
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  color: #00384d;
+  font-weight: 500;
+}
+.list-cont ul li {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+}
 @media (max-width: 772px) {
   nav ul {
     margin: 1rem 0;
@@ -239,5 +249,11 @@ nav ul li a {
   .stick-left {
     position: relative;
     top: 0;
+  }
+  .form-list-left button {
+    margin-top: 1rem;
+  }
+  .form-list-left input {
+    padding: 0.5rem 4rem 0.5rem 1rem;
   }
 }
