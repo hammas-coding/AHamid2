@@ -121,6 +121,90 @@ nav ul li a {
   justify-content: space-around;
   align-items: center;
 }
+/* customer data  */
+.customer-data-main {
+  background-color: #00384d;
+  text-align: center;
+}
+
+.customer-image-wrapper img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+}
+.customer-info-head {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.customer-info-orange {
+  color: #f3774e;
+  font-size: 1.25rem;
+  text-shadow: 0 0 2px #fff;
+}
+.customer-info-text {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 2.5rem 0;
+}
+.customer-info-button {
+  border: none;
+  background-color: transparent;
+  border: 2px solid #007991;
+  border-radius: 50px;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.customer-info-button:hover {
+  border: 2px solid #f3774e;
+}
+.customer-info {
+  padding: 0 20px;
+}
+
+/* list data  */
+.list-data-main {
+  background-color: #f3774e;
+}
+.list-data-left {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.stick-left {
+  position: sticky;
+  top: 0;
+}
+.form-list-heading {
+  font-size: 1.75rem;
+  color: #fff;
+}
+.form-list-description {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-list-left input {
+  border: 1px solid #00384d;
+  background-color: #fff;
+  padding: 0.5rem 6rem 0.5rem 1rem;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+.form-list-left button {
+  background-color: #00384d;
+  padding: 0.5rem 1.75rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+.form-list-description a {
+  text-decoration: none;
+  color: #14798b;
+}
 @media (max-width: 772px) {
   nav ul {
     margin: 1rem 0;
@@ -138,9 +222,22 @@ nav ul li a {
   .banner-main-text-1,
   .banner-main-text-2 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .logo-wrapper {
     flex-direction: column;
+  }
+  .customer-info-head {
+    font-size: 2rem;
+  }
+  .customer-info-orange {
+    font-size: 1rem;
+  }
+  .customer-info-text {
+    font-size: 1.25rem;
+  }
+  .stick-left {
+    position: relative;
+    top: 0;
   }
 }
