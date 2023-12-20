@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,700;0,8..144,900;1,8..144,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Serif", Sans-serif;
 }
 /* navbar  */
 .nav-main {
@@ -464,6 +466,9 @@ nav ul li a {
   padding: 0.5rem 0.75rem;
   border-radius: 50%;
 }
+.visible-card {
+  display: block !important;
+}
 /* bottom  */
 .bottom-logo {
   width: 40%;
@@ -561,7 +566,10 @@ nav ul li a {
   .freedom-text {
     font-size: 2.25rem;
   }
-
+  .dropdown-menu-main {
+    width: 20px;
+    overflow: hidden;
+  }
   .dropdown:hover .dropdown-menu-main,
   .dropdown .dropdown-menu-main:hover {
     display: none;
@@ -571,10 +579,15 @@ nav ul li a {
   .tes-card {
     min-width: 50%;
   }
+  .dropdown-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .drop-left {
+    border-right: none;
+  }
 }
-.visible-card {
-  display: block !important;
-}
+
 .back-to-top {
   bottom: 15px;
   right: 15px;
@@ -586,5 +599,11 @@ nav ul li a {
   cursor: pointer;
   font-size: 1rem;
   padding: 12px;
+  display: none;
+}
+#mydiv {
+  background-color: red;
+}
+.dropdown-mobile {
   display: none;
 }
