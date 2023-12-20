@@ -82,7 +82,8 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
 }
-.fa-arrow-right {
+.fa-arrow-right,
+.fa-arrow-down {
   font-size: 2.25rem;
   color: #f3774e;
 }
@@ -215,6 +216,127 @@ nav ul li a {
   margin-bottom: 2rem;
   border-bottom: 1px solid #fff;
 }
+
+/* time advantages  */
+.card-inner {
+  background-color: #f3774e;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3.5rem 1rem 1rem 1rem;
+  position: relative;
+}
+.advantage-heading,
+.advantage-description {
+  font-size: 1.2rem;
+  color: #f3774e;
+  font-weight: 500;
+  text-align: center;
+}
+.advantage-description {
+  font-size: 2.5rem;
+  color: #025869;
+}
+.card-out {
+  margin: 1rem 0;
+}
+.card-main {
+  width: 100%;
+}
+.card1-img {
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 10px #fff;
+  top: -40%;
+  left: 33%;
+  width: 100px;
+  height: 100px;
+}
+.card-text-1 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
+.card-text-2 {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 0 1.5rem 0;
+}
+.card-arrow {
+  color: #6ec1e4;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.card-bottom-text {
+  font-size: 1.25rem;
+  color: #007991;
+}
+.customer-info-button-2 {
+  background-color: transparent;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #007991;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: darkgrey;
+  padding: 0.25rem 1.25rem;
+}
+.customer-info-button-2:hover {
+  border: 1px solid #f3774e;
+}
+.freedom-text {
+  font-size: 2.5rem;
+  color: #00384d;
+  text-align: center;
+}
+.orange {
+  color: #f3774e;
+}
+.form-list-card {
+  display: flex;
+}
+.form-list-card input {
+  border: 1px solid #00384d;
+  background-color: #fff;
+  padding: 0.5rem 4rem 0.5rem 1rem;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+.form-list-card button {
+  background-color: #00384d;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+.card-bottom-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.subscribe-card {
+  font-size: 2rem;
+  color: #33424c;
+}
+.description-card {
+  font-size: 0.75rem;
+  color: #476f7f;
+}
+.never-spam {
+  font-size: 0.75rem;
+  color: #476f7f;
+  text-align: start;
+  margin-top: 0.25rem;
+}
 @media (max-width: 772px) {
   nav ul {
     margin: 1rem 0;
@@ -255,5 +377,20 @@ nav ul li a {
   }
   .form-list-left input {
     padding: 0.5rem 4rem 0.5rem 1rem;
+  }
+  .card-wrapper {
+    flex-direction: column;
+  }
+  .card1-img {
+    left: 38%;
+  }
+  .form-list-card {
+    flex-direction: column;
+  }
+  .form-list-card button {
+    margin-top: 1rem;
+  }
+  .freedom-text {
+    font-size: 2.25rem;
   }
 }
