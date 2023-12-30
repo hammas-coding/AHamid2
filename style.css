@@ -8,9 +8,6 @@
 /* navbar  */
 .navbar {
   background-color: #fff !important;
-  position: sticky !important;
-  top: 0;
-  z-index: 99;
 }
 .nav-main {
   background-color: #fff !important;
@@ -24,6 +21,7 @@
   width: 60%;
   height: 30%;
 }
+
 nav ul li {
   display: flex;
   justify-content: center;
@@ -133,7 +131,7 @@ nav ul li a {
 }
 .banner-inner-right {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .fa-arrow-right,
@@ -160,7 +158,8 @@ nav ul li a {
   border: none;
   outline: none;
   border-radius: 50px;
-  margin-top: 4rem;
+  margin-top: 4.25rem;
+  margin-left: -4.25rem;
 }
 
 /* logos  */
@@ -228,7 +227,7 @@ nav ul li a {
 }
 .stick-left {
   position: sticky;
-  top: 100px;
+  top: 0;
 }
 .form-list-heading {
   font-size: 1.75rem;
@@ -527,9 +526,7 @@ nav ul li a {
   .banner-inner-right {
     flex-direction: column;
   }
-  .subscribe-btn {
-    margin-top: 2rem;
-  }
+
   .banner-main-text-1,
   .banner-main-text-2 {
     font-weight: 700;
@@ -549,7 +546,6 @@ nav ul li a {
   }
   .stick-left {
     position: relative;
-    top: 0;
   }
   .form-list-left button {
     margin-top: 1rem;
@@ -599,6 +595,10 @@ nav ul li a {
   .fa-star {
     color: #f6bb06;
     font-size: 0.5rem;
+  }
+  .subscribe-btn {
+    margin-left: 0rem;
+    margin-top: 2rem;
   }
 }
 
