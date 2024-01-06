@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,700;0,8..144,900;1,8..144,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Serif", Sans-serif;
 }
 /* navbar  */
+.navbar {
+  background-color: #fff !important;
+  /* position: sticky !important;
+  top: 0;
+  z-index: 99; */
+}
 .nav-main {
   background-color: #fff !important;
 }
@@ -55,7 +63,7 @@ nav ul li a {
 .dropdown-menu-main {
   display: none;
   position: absolute;
-  top: 120%;
+  top: 100%;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -220,7 +228,8 @@ nav ul li a {
 }
 .stick-left {
   position: sticky;
-  top: 0;
+  /* top: 100px; */
+  top: 0px;
 }
 .form-list-heading {
   font-size: 1.75rem;
@@ -464,6 +473,9 @@ nav ul li a {
   padding: 0.5rem 0.75rem;
   border-radius: 50%;
 }
+.visible-card {
+  display: block !important;
+}
 /* bottom  */
 .bottom-logo {
   width: 40%;
@@ -522,7 +534,7 @@ nav ul li a {
   .banner-main-text-1,
   .banner-main-text-2 {
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .logo-wrapper {
     flex-direction: column;
@@ -542,9 +554,10 @@ nav ul li a {
   }
   .form-list-left button {
     margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
   }
   .form-list-left input {
-    padding: 0.5rem 4rem 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
   }
   .card-wrapper {
     flex-direction: column;
@@ -561,7 +574,10 @@ nav ul li a {
   .freedom-text {
     font-size: 2.25rem;
   }
-
+  .dropdown-menu-main {
+    width: 20px;
+    overflow: hidden;
+  }
   .dropdown:hover .dropdown-menu-main,
   .dropdown .dropdown-menu-main:hover {
     display: none;
@@ -571,10 +587,23 @@ nav ul li a {
   .tes-card {
     min-width: 50%;
   }
+  .dropdown-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .drop-left {
+    border-right: none;
+  }
+  .tes-card-inner p {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+  .fa-star {
+    color: #f6bb06;
+    font-size: 0.5rem;
+  }
 }
-.visible-card {
-  display: block !important;
-}
+
 .back-to-top {
   bottom: 15px;
   right: 15px;
@@ -586,5 +615,11 @@ nav ul li a {
   cursor: pointer;
   font-size: 1rem;
   padding: 12px;
+  display: none;
+}
+#mydiv {
+  background-color: red;
+}
+.dropdown-mobile {
   display: none;
 }
